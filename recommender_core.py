@@ -164,3 +164,9 @@ def list_users():
 
 def list_movies():
     return MOVIES
+
+
+def user_profile(username: str) -> Dict[str, float]:
+    if username not in USER_RATINGS:
+        raise KeyError(f"Unknown user '{username}'")
+    return USER_RATINGS[username]

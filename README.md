@@ -17,6 +17,16 @@ python recommender_demo.py
 
 Expected output: training RMSE every 10 epochs and top-3 movie picks for each demo user.
 
+## Run the mini website
+
+```bash
+source .venv/bin/activate
+python app.py
+# open http://127.0.0.1:5000
+```
+
+The page lets you pick a demo user and returns top-N recommendations from the matrix-factorization model, alongside their existing ratings.
+
 ## What the demo does
 
 1. Builds a small synthetic dataset of users and movie ratings.
